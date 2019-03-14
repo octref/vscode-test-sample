@@ -2685,10 +2685,10 @@ vinyl@^2.0.0, vinyl@^2.0.1, vinyl@^2.0.2:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-vscode-test@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/vscode-test/-/vscode-test-0.0.1.tgz#a4000ce123b4c513535a75a8daee6fccbb1e6ca7"
-  integrity sha512-Zz74n7gqvbW9kmgpk4ECG10dRG/24XpxQLb7JqgAoqKb2jDmC2cYxetbpZBt6QlfPhzCPcdwdQXogq3YM1qh/A==
+vscode-test@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vscode-test/-/vscode-test-0.0.2.tgz#f28781d6b3f32a1d8234364e667c2209ddeef5f9"
+  integrity sha512-QSdzSqlffYgLtH93lf2LuIW1loIb8/oRkoZOsk4GElu7/+zieWGZAET6nX2YAqdn1V9+mVNyGaNbklZCfoNR2Q==
   dependencies:
     glob "^7.1.2"
     mocha "^6.0.2"
