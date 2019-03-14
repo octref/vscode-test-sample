@@ -8,9 +8,6 @@ async function go() {
   const testRunnerPath = path.resolve(__dirname, './suite')
   const testWorkspace = path.resolve(__dirname, '../../test-fixtures/fixture1')
 
-  const testRunnerPath2 = path.resolve(__dirname, './suite2')
-  const testWorkspace2 = path.resolve(__dirname, '../../test-fixtures/fixture2')
-
   /**
    * Basic usage
    */
@@ -19,6 +16,9 @@ async function go() {
     testRunnerPath,
     testWorkspace
   })
+
+  const testRunnerPath2 = path.resolve(__dirname, './suite2')
+  const testWorkspace2 = path.resolve(__dirname, '../../test-fixtures/fixture2')
 
   /**
    * Running a second test suite
