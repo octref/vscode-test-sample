@@ -1222,9 +1222,9 @@ semver@^5.3.0, semver@^5.4.1:
   integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
 
 source-map-support@^0.5.0:
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
-  integrity sha512-YfQ3tQFTK/yzlGJuX8pTwa4tifQj4QS2Mj7UegOu8jAz59MqIiMGPXxQhVQiIMNzayuUSF/jEuVnfFF5JqybmQ==
+  version "0.5.11"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.11.tgz#efac2ce0800355d026326a0ca23e162aeac9a4e2"
+  integrity sha512-//sajEx/fGL3iw6fltKMdPvy8kL3kJ2O3iuYlRoT3k9Kb4BjOoZ+BZzaNHeuaruSt+Kf3Zk9tnfAQg9/AJqUVQ==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -1582,7 +1582,7 @@ vscode-test@^0.0.3:
   resolved "https://registry.yarnpkg.com/vscode-test/-/vscode-test-0.0.3.tgz#44ef5ca6c2b0d75183bd869b84a48dd878775cbd"
   integrity sha512-YfS9vaGVKpt1LwivTWPaDiIkdkhjd8liCd8Z5/BcYKGPJITWFX7R1zvODhPVHFSnIcug1GHVZx/p9TpT4xiS6w==
 
-vscode@^1.1.28:
+vscode@^1.1.30:
   version "1.1.30"
   resolved "https://registry.yarnpkg.com/vscode/-/vscode-1.1.30.tgz#700e54fd52e3d7eb757df6b60b030828c940b3a8"
   integrity sha512-YDj5w0TGOcS8XLIdekT4q6LlLV6hv1ZvuT2aGT3KJll4gMz6dUPDgo2VVAf0i0E8igbbZthwvmaUGRwW9yPIaw==

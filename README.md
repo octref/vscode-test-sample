@@ -47,10 +47,14 @@ async function go() {
   })
 
   /**
-   * Manually download VS Code and use 1.31.0 release for testing.
-   * Note that if `.vscode-test/vscode-1.31.0` folder exists it won't be re-downloaded
+   * Noop, since 1.31.0 already downloaded to .vscode-test/vscode-1.31.0
    */
-  const vscodeExecutablePath = await downloadAndUnzipVSCode('1.31.0')
+  await downloadAndUnzipVSCode('1.31.0')
+
+  /**
+   * Manually download VS Code 1.30.0 release for testing.
+   */
+  const vscodeExecutablePath = await downloadAndUnzipVSCode('1.30.0')
   await runTests({
     vscodeExecutablePath,
     extensionPath,
