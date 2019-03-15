@@ -36,6 +36,6 @@
 		"vscode": "^1.1.30"
 	},
 	"dependencies": {
-		"vscode-test": "^0.0.3"
+		"vscode-test": "^0.0.5"
 	}
 }
