@@ -1624,10 +1624,10 @@ vinyl@^2.0.0, vinyl@^2.0.1, vinyl@^2.0.2:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-vscode-test@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/vscode-test/-/vscode-test-0.0.5.tgz#77c04241313cafa1fcce055b6e1baf0765eaf088"
-  integrity sha512-8dskG4Ffr+aviLpXDHmpwqXjTTV5dCNQ9DfAfd2Cq74z6clyndQTQrrIGwtZylAg0Od9D1y6o3p7LZv2ocpKlA==
+vscode-test@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vscode-test/-/vscode-test-0.1.0.tgz#0538f00b5e843f51a4f38e396a36eb2b3d2c9384"
+  integrity sha512-+iS1ht762Q0fCN2ThM5kHI+LLaH7WLbO6Dar29H5XEBLMZ5soVeVZv7uauBjchSKfR0SNblVo9TcLEXI/5V5Jw==
   dependencies:
     http-proxy-agent "^2.1.0"
     https-proxy-agent "^2.2.1"
