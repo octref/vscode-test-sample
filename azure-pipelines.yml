@@ -16,7 +16,7 @@ strategy:
       imageName: 'vs2017-win2016'
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: $(imageName)
 
 steps:
 - task: NodeTool@0
