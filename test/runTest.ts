@@ -4,6 +4,8 @@ import { runTests, downloadAndUnzipVSCode } from 'vscode-test'
 
 async function go() {
 
+  console.log(`Platform: ${process.platform}`);
+
   const extensionPath = path.resolve(__dirname, '../../')
   const testRunnerPath = path.resolve(__dirname, './suite')
   const testWorkspace = path.resolve(__dirname, '../../test-fixtures/fixture1')
