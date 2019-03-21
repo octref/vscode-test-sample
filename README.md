@@ -1,4 +1,15 @@
-# vscode-test-sample
+<p>
+  <h1 align="center">vscode-test-sample</h1>
+</p>
+
+<p align="center">
+  <a href="https://travis-ci.org/octref/vscode-test-sample">
+    <img src="https://img.shields.io/travis/octref/vscode-test-sample.svg?label=Travis&logo=Travis&style=flat-square">
+  </a>
+  <a href="https://dev.azure.com/zhenhwu/vscode/_build?definitionId=1">
+    <img src="https://img.shields.io/azure-devops/build/zhenhwu/95c3275f-c40a-43e1-b7f1-c6b8e8ef8bfd/1.svg?label=Azure%20DevOps&logo=Azure%20Devops&style=flat-square">
+  </a>
+</p>
 
 Sample for using https://github.com/microsoft/vscode-test.
 
