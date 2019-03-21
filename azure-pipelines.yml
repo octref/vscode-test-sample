@@ -28,4 +28,4 @@ steps:
     yarn install
     yarn compile
     yarn test
-  displayName: 'npm install and build'
+  displayName: 'Build and Test'
