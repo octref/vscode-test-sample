@@ -26,9 +26,12 @@ steps:
   displayName: 'Install Node.js'
 
 - bash: |
-    set -e;
-    /usr/bin/Xvfb :10 -ac >> /tmp/Xvfb.out 2>&1 &;
-    disown -ar;
+    if [ $AGENT_OS == "Linux" ]; then
+      set -e
+      /usr/bin/Xvfb :10 -ac >> /tmp/Xvfb.out 2>&1 &
+      disown -ar
+      echo "Started xvfb"
+    fi
   displayName: Start xvfb
 
 - bash: yarn install
