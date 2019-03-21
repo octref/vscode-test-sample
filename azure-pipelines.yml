@@ -24,8 +24,9 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
-- script: |
-    yarn install
-    yarn compile
-    yarn test
-  displayName: 'Build and Test'
+- bash: yarn install
+  displayName: Install Dependencies
+- bash: yarn compile
+  displayName: Compile Scripts
+- bash: yarn test
+  displayName: Run Tests
