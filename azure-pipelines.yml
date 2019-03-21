@@ -19,10 +19,18 @@ pool:
   vmImage: $(imageName)
 
 steps:
+
 - task: NodeTool@0
   inputs:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
+
+- bash: |
+  if [ $AGENT_OS == "linux" ]; then
+    export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
+    sh -e /etc/init.d/xvfb start;
+    sleep 3;
+  fi
 
 - bash: yarn install
   displayName: Install Dependencies
