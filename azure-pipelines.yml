@@ -25,6 +25,11 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
+- bash: yarn install
+  displayName: Install Dependencies
+- bash: yarn compile
+  displayName: Compile Scripts
+
 - bash: |
     if [ $AGENT_OS == "Linux" ]; then
       set -e
@@ -34,9 +39,7 @@ steps:
     fi
   displayName: Start xvfb
 
-- bash: yarn install
-  displayName: Install Dependencies
-- bash: yarn compile
-  displayName: Compile Scripts
 - bash: yarn test
   displayName: Run Tests
+  env:
+    DISPLAY: :10
