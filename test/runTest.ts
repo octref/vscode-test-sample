@@ -54,6 +54,30 @@ async function go() {
       testRunnerPath,
       testWorkspace
     })
+
+    /**
+     * Add additional launch flags for VS Code
+     */
+    await runTests({
+      vscodeExecutablePath,
+      extensionPath,
+      testRunnerPath,
+      testWorkspace,
+      // This disables all extensions except the one being testing
+      additionalLaunchArgs: ['--disable-extensions']
+    })
+
+    /**
+     * Manually specify all launch flags for VS Code
+     */
+    await runTests({
+      vscodeExecutablePath,
+      launchArgs: [
+        testWorkspace,
+        `--extensionDevelopmentPath=${extensionPath}`,
+        `--extensionTestsPath=${testRunnerPath}`
+      ]
+    })
   } catch (err) {
     console.error('Failed to run tests')
     process.exit(1)

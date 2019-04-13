@@ -21,7 +21,6 @@ import * as path from 'path'
 import { runTests, downloadAndUnzipVSCode } from 'vscode-test'
 
 async function go() {
-
   const extensionPath = path.resolve(__dirname, '../../')
   const testRunnerPath = path.resolve(__dirname, './suite')
   const testWorkspace = path.resolve(__dirname, '../../test-fixtures/fixture1')
@@ -71,6 +70,30 @@ async function go() {
     extensionPath,
     testRunnerPath,
     testWorkspace
+  })
+
+  /**
+   * Add additional launch flags for VS Code
+   */
+  await runTests({
+    vscodeExecutablePath,
+    extensionPath,
+    testRunnerPath,
+    testWorkspace,
+    // This disables all extensions except the one being testing
+    additionalLaunchArgs: ['--disable-extensions']
+  })
+
+  /**
+   * Manually specify all launch flags for VS Code
+   */
+  await runTests({
+    vscodeExecutablePath,
+    launchArgs: [
+      testWorkspace,
+      `--extensionDevelopmentPath=${extensionPath}`,
+      `--extensionTestsPath=${testRunnerPath}`
+    ]
   })
 }
 
