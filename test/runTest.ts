@@ -40,6 +40,16 @@ async function go() {
     })
 
     /**
+     * Use Insiders release for testing
+     */
+    await runTests({
+      version: 'insiders',
+      extensionPath,
+      testRunnerPath,
+      testWorkspace
+    })
+
+    /**
      * Noop, since 1.31.0 already downloaded to .vscode-test/vscode-1.31.0
      */
     await downloadAndUnzipVSCode('1.31.0')
