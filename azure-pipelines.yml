@@ -40,6 +40,7 @@ steps:
   displayName: Start xvfb
 
 - bash: sudo apt -y install libgconf2-4
+  displayName: Install libgconf2-4 for Linux
   condition: eq(variables['Agent.OS'], 'Linux')
 
 - bash: yarn test
