@@ -30,9 +30,6 @@ steps:
 - bash: yarn compile
   displayName: Compile Scripts
 
-- bash: sudo apt -y install libgconf2-4
-  condition: eq(variables['Agent.OS'], 'Linux')
-
 - bash: |
     if [ $AGENT_OS == "Linux" ]; then
       set -e
@@ -41,6 +38,9 @@ steps:
       echo "Started xvfb"
     fi
   displayName: Start xvfb
+
+- bash: sudo apt -y install libgconf2-4
+  condition: eq(variables['Agent.OS'], 'Linux')
 
 - bash: yarn test
   displayName: Run Tests
