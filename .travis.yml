@@ -4,16 +4,14 @@ os:
   - linux
 node_js: 8
 
-before_install:
-  - |
-    if [ $TRAVIS_OS_NAME == "linux" ]; then
-        export DISPLAY=:10;
-        set -e
-        /usr/bin/Xvfb :10 -ac >> /tmp/Xvfb.out 2>&1 &
-        disown -ar
-    fi
+addons:
+  apt:
+    packages:
+      - xvfb
 
 install:
+  - if [ $TRAVIS_OS_NAME == "linux" ]; then export DISPLAY=':99.0' ; fi
+  - if [ $TRAVIS_OS_NAME == "linux" ]; then Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &; fi
   - yarn
 
 script:
