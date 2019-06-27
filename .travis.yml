@@ -17,6 +17,7 @@ install:
   - yarn
 
 script:
+  - echo $DISPLAY
   - yarn compile
   - yarn test
 
